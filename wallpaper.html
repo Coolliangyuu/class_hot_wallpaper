@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                font-family: 'Microsoft YaHei';
+            }
+            #background{
+                height: 720px;
+                width: 1280px;
+            }
+            #resou{
+                position: fixed;
+                height: 475px;
+                width: 400px;
+                right: 100px;
+                top: 720px;
+                background-color: rgb(255, 255, 255);
+                border: rgb(238,238,238);
+                border-radius: 10px;
+                border-style: solid;
+                border-width: 1px;
+                transition: 1s;
+            }
+            #top{
+                width: 100%;
+                height: 140px;
+            }
+            #toppic{
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                border-bottom-right-radius: 0px;
+                border-bottom-left-radius: 0px;
+            }
+            #main{
+                width: 100%;
+                height: 330px;
+            }
+            #tiaoli{
+                width: 100%;
+                height: 66px;
+                border-top: 1px;
+                border-left: 0px;
+                border-right: 0px;
+                border-bottom: 0px;
+                border-color: rgb(238, 238, 238);
+                border-style: solid;
+            }
+            #toptiaoli{
+                position: relative;
+                top: 32px;
+                left: 10px;
+                width: 20px;
+                margin: 0 0 0 -3px;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                text-align: center;
+                font-size: 24px;
+                font-style: italic;
+                color: #f26d5f;
+                font-family: 'Microsoft YaHei';
+                font-feature-settings: normal;
+                font-variant: normal;
+                font-weight: bolder;
+            }
+            #normaltiaoli{
+                position: relative;
+                top: 32px;
+                left: 12px;
+                width: 20px;
+                margin: 0 0 0 -3px;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                text-align: center;
+                font-size: 24px;
+                color: #ff8200;
+                font-family: 'Microsoft YaHei';
+                font-feature-settings: normal;
+                font-variant: normal;
+            }
+            #neirong{
+                position: relative;
+                left: 40px;
+                top: 50%;
+                transform: translateY(-45%);
+                font-size: 17px;
+                height: auto;
+                display: table-cell;
+                vertical-align: middle;
+                width: 330px;
+                color: #504e4e;
+            }
+            .icon1{
+                position: absolute;
+                padding-bottom: 50px;
+                left: 370px;
+                top: 163px;
+                width: 20px;
+            }
+            .icon2{
+                position: absolute;
+                padding-bottom: 50px;
+                left: 370px;
+                top: 230px;
+                width: 20px;
+            }
+            .icon3{
+                position: absolute;
+                padding-bottom: 50px;
+                left: 370px;
+                top: 297px;
+                width: 20px;
+            }
+            .icon4{
+                position: absolute;
+                padding-bottom: 50px;
+                left: 370px;
+                top: 364px;
+                width: 20px;
+            }
+            .icon5{
+                position: absolute;
+                padding-bottom: 50px;
+                left: 370px;
+                top: 431px;
+                width: 20px;
+            }
+            .wbpro-icon-search-tp1{
+                display: block;
+                border-radius: 4px;
+                width: 20px;
+                padding-left: 1px;
+                padding-bottom: 1px;
+                text-align: center;
+                color: #fff;
+            }
+            #date{
+                position: absolute;
+                right: 10px;
+                color: rgba(207, 199, 199, 0.5);
+            }
+            #hotbtn{
+                position: fixed;
+                background-color: #fff;
+                right: 5px;
+                bottom:40px;
+                width: 80px;
+                height: 80px;
+                border-radius: 10px;
+                border-color: rgb(194, 194, 194);
+                border-style: solid;
+                border-width: 2px;
+                transition: 1s;
+                cursor: pointer;
+            }
+            #hotbtn_img{
+                position: relative;transition: 1s;height: 35px;left: 50%;transform: translateX(-50%);top: 10px;
+            }
+            #hotbtn_text{
+                position: relative;text-align: center;width: 82px;top: 10px;transition: 1s;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="background">
+            <img src="./resource/Wallpaper.jpg" style="width: 100%;height: 100%;" alt="">
+        </div>
+        <div class="open" id="hotbtn">
+            <img src="./resource/hot.png" id="hotbtn_img" alt="">
+            <div id="hotbtn_text">五班热榜</div>
+        </div>
+        <div id="resou">
+            <div id="top"><img id="toppic" src="./resource/toppic.png" alt=""></div>
+            <div id="main">
+                <div id="tiaoli">
+                    <div id="toptiaoli">1</div>
+                    <div id="neirong" class="tiao">热搜第一</div>
+                    <div class="icon1"><span class="wbpro-icon-search-tp1" style="background: rgb(189, 0, 0);">爆</span></div>
+                </div>
+                <div id="tiaoli">
+                    <div id="toptiaoli">2</div>
+                    <div id="neirong" class="tiao"></div>
+                    <div class="icon2"><span class="wbpro-icon-search-tp1" style="background: rgb(255, 148, 6);">热</span></div>
+
+                </div>
+                <div id="tiaoli">
+                    <div id="toptiaoli">3</div>
+                    <div id="neirong" class="tiao"></div>
+                    <div class="icon3"><span class="wbpro-icon-search-tp1" style="background: rgb(248,100,0);">沸</span></div>
+
+                </div>
+                <div id="tiaoli">
+                    <div id="normaltiaoli">4</div>
+                    <div id="neirong" class="tiao"></div>
+                
+                </div>
+                <div id="tiaoli">
+                    <div id="normaltiaoli">5</div>
+                    <div id="neirong" class="tiao"></div>
+                    <div class="icon5"><span class="wbpro-icon-search-tp1" style="background: rgb(255,56,82);">新</span></div>
+
+                </div>
+                <div id="date" class="tiao">date</div>
+            </div>
+        </div>
+        <script src="热榜.txt"></script>
+        <script>
+
+            onload = function(){
+                for(var i=0;i<lis.length;i++){
+                    document.getElementsByClassName("tiao")[i].textContent = lis[i]
+                }
+                // t1.textContent=lis[0]
+                console.log("autorun")
+
+                var flag = false
+                document.getElementById("hotbtn").onclick = function(){
+                    if(!flag){
+                        document.getElementById("resou").style.top = "80px";
+                        document.getElementById("hotbtn_img").style.height = "50px";
+                        document.getElementById("hotbtn_img").style.top = "15px";
+                        document.getElementById("hotbtn_text").style.fontSize = "0px";
+                        document.getElementById("hotbtn").style.backgroundColor = "#ff9900";
+                        flag = true;
+                    }
+                    else{
+                        document.getElementById("resou").style.top = "720px";
+                        document.getElementById("hotbtn_img").style.height = "35px";
+                        document.getElementById("hotbtn_img").style.top = "10px";
+                        document.getElementById("hotbtn_text").style.fontSize = "16px";
+                        flag = false;
+                    }
+                }
+                        document.getElementById("hotbtn").addEventListener('mouseenter', function(){
+                        console.log("mzin");
+                        document.getElementById("hotbtn").style.backgroundColor = "#ff9900";
+                        console.log(flag)
+                    })
+                    document.getElementById("hotbtn").addEventListener('mouseleave', function(){
+                        console.log("mzout");
+                        if(!flag){
+                            document.getElementById("hotbtn").style.backgroundColor = "#fff";
+                            console.log(flag)
+                        }
+                        else{
+                            console.log(flag)
+                        }
+                    })
+                    
+
+
+                // document.getElementsByClassName("open")[0].onclick = function(){
+                //     document.getElementById("resou").style.top = "720px";
+                //     document.getElementsByClassName("open")[0].className = "close";
+                // }
+                // document.getElementsByClassName("close")[0].onclick = function(){
+                //     document.getElementById("resou").style.top = "80px";
+                //     document.getElementsByClassName("close")[0].className = "open";
+                // }
+            }
+
+    //         onload = function(){
+    //             var anNiu = document.getElementById('anniu');
+    //             anNiu.onclick = function(){
+    //                 t1.textContent="1"
+    //                 console.log("233")
+    //     }
+    // }
+        </script>
+    </body>
+</html>
